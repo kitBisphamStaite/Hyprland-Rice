@@ -6,13 +6,8 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
 
-  "modules-right": ["temperature", "memory", "pulseaudio", "network", "battery", "custom/power"],
+  "modules-right": ["backlight", "pulseaudio", "network", "battery", "custom/power"],
 
-  // "hyprland/workspaces": {
-  //   "disable-scroll": true,
-  //   "all-outputs": true,
-  //   "format": "{name}"
-  // },
   "hyprland/workspaces": {
 	"format": "{name} {icon}",
 	"format-icons": {
@@ -43,9 +38,9 @@
 
   "network": {
     "format-wifi": "  {essid}",
-    "format-ethernet": "  {ipaddr}",
+    "format-ethernet": "W  {ipaddr}",
     "format-disconnected": "  Disconnected",
-    "on-click-right": "tray"
+    "on-click": "~/.local/bin/wifimenu"
   },
 
   "tray": {
@@ -60,6 +55,11 @@
     "format-icons": ["", "", "", "", ""]
   },
 
+  "backlight": {
+	"device": "intel_backlight",
+	"format": "{icon},{percent}%",
+	"format-icons": [""]
+  },
 
   "custom/power": {
     "format": "",
