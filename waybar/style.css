@@ -63,3 +63,18 @@ window#waybar {
   color: #282828;
   border-radius: 4px;
  }
+
+#battery.warning {
+  color: #ff8800;
+}
+
+#battery.critical {
+  color: #ff0000;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        opacity: 0.5;
+    }
+}
