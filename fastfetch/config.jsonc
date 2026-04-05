@@ -3,25 +3,10 @@
   "modules": [
     "title",
     "separator",
-    "os",
-    "host",
     "kernel",
-    "uptime",
     "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "terminal",
-    "cpu",
-    "gpu",
     "memory",
-    "disk",
-    "localip",
-    "battery",
-    "poweradapter"
+    "disk"
   ]
+
 }
